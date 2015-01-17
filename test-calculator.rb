@@ -9,7 +9,6 @@ class CalculatorTest < Test::Unit::TestCase
 
   load_data("sampledata.csv")
   def test_execute(data)
-    expected, target = data
-    assert_equal(expected, @calculator.execute(target))
+    assert_equal(data["expected"], @calculator.execute(data["input"]))
   end
 end

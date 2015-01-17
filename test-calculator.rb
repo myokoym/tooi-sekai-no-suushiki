@@ -1,5 +1,6 @@
 # http://nabetani.sakura.ne.jp/kanagawa.rb/evalex/
 
+require "test-unit"
 require "./calculator"
 
 class CalculatorTest < Test::Unit::TestCase

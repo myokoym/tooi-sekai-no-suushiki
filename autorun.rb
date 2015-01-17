@@ -5,7 +5,7 @@ loop do
     mtime = File.mtime(path)
     if mtimes[path].nil? or
          mtimes[path] != mtime
-      system("ruby", "run-test.rb")
+      system("ruby", "test-calculator.rb")
       mtimes[path] = mtime
     end
   end

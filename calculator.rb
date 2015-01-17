@@ -7,7 +7,7 @@ class Calculator
   ]
 
   def execute(text)
-    terms = text.split(//)
+    terms = text.scan(/\d+|\D/)
     OPERATORS.each do |operator|
       terms = execute_an_operator(terms, operator)
     end
